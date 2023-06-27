@@ -1,15 +1,45 @@
 * {
   margin: 0px;
   padding: 0px;
+  /* background-color: #141414; */
 }
 .navbar {
   display: flex;
-  background-color: #000080;
+  background-color: #70d0f9;
+  border-radius: 0px 0px 8px 8px;
   width: 100hw;
-  height: 80px;
+  height: 50px;
+  align-items: center;
 }
-.navbar > nav > a {
-  padding: 0px 33px;
-  font-size: 30px;
-  color: D9D9D9;
+
+.layout {
+  display: flex;
+  align-items: center;
+}
+.logo{
+  position:absolute;
+  left: 1%;
+}
+.rounded-full {
+  border-radius: 100px;
+  border:none;
+  padding: 6px 10px;
+  background-color:yellow;
+}
+.navtxt {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family:dm sans;
+  font-weight: 500;
+}
+.nav_navbar {
+  display: flex;
+  position:absolute;
+  align-items: center;
+  gap: 1.5rem;
+  right: 1%;
+}
+.temp{
+  color: #141414;
 }
