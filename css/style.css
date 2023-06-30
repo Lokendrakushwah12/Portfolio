@@ -1,14 +1,16 @@
-html{
-  background-image:url("./assets/images/bg1.svg");
-  background-size:220%;
+html {
+  background-image: url("../assets/images/bg1.svg");
+  background-size: 220%;
   background-position: center;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
+
 body {
   margin: 0px;
   padding: 0px;
   /* background-color: #141414; */
 }
+
 .navbar {
   display: flex;
   background-color: #12ADC1;
@@ -22,32 +24,85 @@ body {
   display: flex;
   align-items: center;
 }
-.logo{
-  position:absolute;
+
+.logo {
+  position: absolute;
   left: 1%;
   cursor: pointer;
 }
+
 .rounded-full {
   border-radius: 100px;
-  border:none;
+  border: none;
   padding: 6px 10px;
-  background-color:#FDD037;
+  background-color: #FDD037;
   cursor: pointer;
 }
+
 .navtxt {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.2rem;
-  font-family:dm sans;
+  font-family: dm sans;
   font-weight: 500;
 }
+
 .nav_navbar {
   display: flex;
-  position:absolute;
+  position: absolute;
   align-items: center;
   gap: 1.5rem;
   right: 1%;
 }
-.temp{
+
+.temp {
   color: #141414;
+}
+
+.intro {
+  display: flex;
+  padding: 3%;
+  gap: 10%;
+  align-items: center;
+}
+
+.profile-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intropara {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* align-items: center; */
+}
+
+.intropara>p,
+.skills>p,
+.paratxt {
+  font-size: 1.5rem;
+  font-family: dm sans;
+  font-weight: 400;
+}
+
+.profile-pic>h1,
+.skills>h2 {
+  font-size: 3rem;
+  font-family: dm sans;
+  font-weight: 700;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+
+.skills>ul {
+  font-size: 1.5rem;
+  font-family: dm sans;
+  font-weight: 500;
 }
