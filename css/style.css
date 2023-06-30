@@ -101,7 +101,7 @@ body {
   padding: 3%;
 }
 
-.skills>ul {
+.skills>ul , .button-text {
   font-size: 1.5rem;
   font-family: dm sans;
   font-weight: 500;
