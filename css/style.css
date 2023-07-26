@@ -18,19 +18,19 @@ body {
 /* Nav-bar */
 .navbar {
   display: flex;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.010);
-  /* border-radius: 0px 0px 8px 8px; */
-  width: 100hw;
+  width: 100vw;
   height: 60px;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   position: sticky;
   z-index: 20;
   top: 0;
+  background-color: rgba(255, 255, 255, 0.502);
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.010);
+  backdrop-filter: blur(20px);
 }
 
-.circle{
+.circle {
   height: 50px;
   width: 50px;
   border-radius: 100vw;
@@ -42,6 +42,7 @@ body {
   position: fixed;
   text-align: center;
 }
+
 /* Hero-section */
 .hero-sec {
   height: 700px;
@@ -64,41 +65,48 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 780px;
 }
-h1{
+
+h1 {
   font-size: 68px;
   text-align: center;
-  
+
 }
+
 .logo {
-  position: absolute;
-  left: 2%;
   cursor: pointer;
+  left: 100px;
 }
 
 .rounded-full {
   border-radius: 999px;
-  border: 2px solid rgba(255, 255, 255, 0.10);
+  border: 1px solid #35c2ff;
   padding: 6px 10px;
   background-color: #00b3ff;
-  backdrop-filter: blur(86px);
   cursor: pointer;
-  
-}
 
-.navtxt,
-.nav-headings {
-  text-decoration: none;
+}
+.rounded-full:hover {
+  background-color: #00a9f1;
+  border: 1px solid #00b3ff;
+
+}
+.navtxt {
   color: #595e67;
-  /* color: #121F26; */
   font-size: 1.2rem;
   font-weight: 600;
 
 }
-.navt{
+
+.navtxt:hover {
+  color: #121F26;
+
+}
+
+.navt {
   text-decoration: none;
   color: #fafcff;
-  /* color: #121F26; */
   font-size: 1.8rem;
   font-weight: 600;
   position: relative;
@@ -108,16 +116,15 @@ h1{
 
 .nav_navbar {
   display: flex;
-  position: absolute;
   align-items: center;
   gap: 1.5rem;
-  right: 2%;
+  right: 500px;
 
 }
 
 .temp {
   color: #ffffff;
-  
+
 }
 
 .respo {
@@ -126,10 +133,11 @@ h1{
   justify-content: center;
   padding: 5% 5%;
 }
+
 .intro {
   display: flex;
   flex-direction: row;
-  gap:6%;
+  gap: 6%;
 }
 
 .profile-pic {
@@ -166,8 +174,9 @@ h2 {
   justify-content: center;
   padding: 0% 5%;
 }
+
 .types,
-.skills{
+.skills {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -181,20 +190,76 @@ h2 {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.images{
+
+.images {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
-.img{
+
+.img {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 15px;
 }
+
 /* Work */
 ol {
   list-style: none;
 }
 
+.image-logo {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-images {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 520px;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  overflow: hidden;
+}
+
+.l-images {
+  scale: 1.25;
+  transition: 0.25s ease-in-out;
+}
+
+.l-images:hover {
+  scale: 1.6;
+  transition: 0.25s ease-in-out;
+}
+
+/* Animation */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color:#00b3ff ;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
